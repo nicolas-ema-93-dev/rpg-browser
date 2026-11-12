@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>RPG - Mi Primer Proyecto</title>
+</head>
+<body>
+<div id="game-container">
+    <!-- Zona del Mapa -->
+    <div id="map-viewport"></div>
+
+    <!-- Panel de Estadísticas e Inventario (HUD) -->
+    <div id="ui-panel">
+        <h2>Estado del Héroe</h2>
+
+        <div class="stat-group">
+            <label>HP: <span id="hp-text">80 / 100</span></label>
+            <div class="bar-container">
+                <div id="hp-bar" class="bar"></div>
+            </div>
+        </div>
+
+        <div class="stat-group">
+            <label>Maná: <span id="mana-text">30 / 50</span></label>
+            <div class="bar-container">
+                <div id="mana-bar" class="bar"></div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <p><strong>Nivel:</strong> <span id="level-text">1</span></p>
+            <p><strong>Exp:</strong> <span id="exp-text">25</span> / 100</p>
+        </div>
+    </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
